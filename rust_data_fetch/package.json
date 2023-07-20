@@ -1,8 +1,13 @@
 {
   "name": "rust_data_fetch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "rust_data_fetch_library",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+      "dist",
+      "pkg"
+  ],
   "scripts": {
     "build": "wasm-pack build",
     "test": "echo \"Error: no test specified\" && exit 1"
