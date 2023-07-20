@@ -1,13 +1,13 @@
-import * as wasm from "../pkg/rust_data_fetch_bg.wasm";
+import * as wasm from "../pkg/rust_data_fetch";
 
 export default class TsAPI {
-  private fetcher: wasm.Fetcher;
+  private fetcher: typeof wasm;
 
-  constructor(url: string) {
-    this.fetcher = new wasm.Fetcher(url);
+  constructor() {
+    this.fetcher = wasm;
   }
 
-  useQuery(query: string): Promise<string> {
-    return this.fetcher.use_query(query);
+  useQuery(url: string, query: string): Promise<any> {
+    return this.fetcher.use_query(url, query);
   }
 }
