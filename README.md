@@ -4,6 +4,7 @@ Rust + Typescript / Data Fetching Library
 
 # Here is a suggested directory structure for creating your own data fetching library
 
+```sh
 rust_data_fetch
 ├── src
 │ ├── lib.rs (Rust library entry point)
@@ -19,3 +20,6 @@ rust_data_fetch
 │ └──example_usage.js (Example usage of your library in Javascript/React)
 ├── Cargo.toml (Rust dependency and build configuration)
 └── package.json (Node.js dependency and build configuration)
+```
+
+p
