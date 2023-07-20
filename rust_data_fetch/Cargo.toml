@@ -8,7 +8,11 @@ edition = "2021"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-wasm-bindgen = "0.2"
+wasm-bindgen = "0.2.74"
 libc = "0.2"
+serde-wasm-bindgen = "0.3"
 wasm-bindgen-futures = "0.4"
 web-sys = { version = "0.3", features = ["Window", "Request", "RequestInit", "Response"]}
+serde_json = "1.0"
+js-sys = "0.3.54"
+log = "0.4"
