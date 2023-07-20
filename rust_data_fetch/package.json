@@ -1,6 +1,6 @@
 {
   "name": "rust_data_fetch",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "rust_data_fetch_library",
   "main": "index.js",
   "scripts": {
