@@ -1,6 +1,6 @@
 {
   "name": "rust_data_fetch",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "rust_data_fetch_library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,8 @@
       "pkg"
   ],
   "scripts": {
-    "build": "wasm-pack build",
+    "build": "wasm-pack build --target web",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
